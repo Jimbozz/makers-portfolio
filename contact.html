@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Stories created by our creatives around the globe">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind&family=Nobile:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+  <!-- Hotjar Tracking Code for http://makerstories.no/ -->
+  <script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:2719072,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+  </script>
+  <title>Makers | Contact</title>
+  <link rel="stylesheet" href="/css/global.css">
+  <link rel="stylesheet" href="/css/contact.css">
+  <link rel="stylesheet" href="/css/media.css">
+</head>
+<body class="page-wrapper contact">
+  <header class="header-layout">
+    <a href="/index.html">
+      <img src="/assets/logo/makers-logo@2x.png" class="logo" alt="Makers logo">
+    </a>
+    <div class="nav-align">
+      <nav class="nav-links">
+        <ul class="nav-unique" id="nav-unique">
+            <li><a href="index.html" class="nav-style">Home</a></li>
+            <li><a href="blog.html" class="nav-style">Blog</a></li>
+            <li><a href="about.html" class="nav-style">About Us</a></li>
+            <li><a href="contact.html" class="active nav-style">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="form-container">
+      <form id="contact-form" action="https://www.makerstories.no/wp-json/contact-form-7/v1/contact-forms/138/feedback" method="post">
+        <div class="form-styles">
+          <label for="your-name">Name*</label>
+          <input class="form-control" id="your-name" type="text" name="your-name" minlength="5" required placeholder="Name here" title="Should be more than 5 characters long">
+          <small class="error-message" hidden>Should be more than 5 characters long</small>
+          <label for="your-email">Email*</label>
+          <input class="form-control" id="your-email" type="email" name="your-email" required placeholder="name@example.com">
+          <small class="error-message" hidden>Please enter a valid e-mail address</small>
+          <label for="your-subject">Subject*</label>
+          <input class="form-control" id="your-subject" type="text" name="your-subject" minlength="15" maxlength="50" required placeholder="Subject here" title="Should be more than 15 characters long">
+          <small class="error-message" hidden>Should be more than 15 characters long</small>
+          <label for="your-message">Message*</label>
+          <textarea class="form-control" id="your-message" type="text" name="your-message" cols="30" rows="10" minlength="25" required placeholder="Message here" title="Should be more than 25 characters long"></textarea>
+          <small class="error-message" hidden>Should be more than 25 characters long</small>
+          <button type="submit" class="contact-button">Submit</button>
+        </div>
+      </form>
+      <div class="validation-pass" id="thanks" hidden>
+        <p>Your form has successfully been submitted. Thanks!</p>
+        <a class="return-button" title="Link back to home page" href="/index.html">Back to Home page</a>
+      </div>
+      <div class="validation-fail" id="fail" hidden>
+        <p>There seems to be an error. Please reload your page and try again.</p>
+        <a class="return-button" title="Link back to home page" href="/index.html">Back to Home page</a>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <div class="footer-form-wrapper">
+        <h3 class="footer-heading">Get stories straight to your inbox?</h3>
+        <form class="footer-form" action="https://noroffcors.herokuapp.com/http://www.makerstories.no/wp-json/contact-form-7/v1/contact-forms/138/feedback" method="post">
+          <label for="email-footer">Email:</label>
+          <input class="form-control" id="email-footer" type="email" name="email" required placeholder=" name@example.com">
+            <button class="footer-button" value="submit">
+              <div class="arrow-button">
+                <i class="fas fa-chevron-right"></i>
+              </div>
+            </button>
+        </form>
+      </div>
+      <div class="footer-links">
+        <ul class="footer-link-layout">
+          <li><a class="footer-link-style" href="/contact.html">Contact</a></li>
+          <li><a class="footer-link-style" href="/about.html">About Us</a></li>
+          <li><a class="footer-link-style" href="#">Facebook</a></li>
+          <li><a class="footer-link-style" href="#">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="/js/contact.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>

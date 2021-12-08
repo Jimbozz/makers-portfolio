@@ -1,0 +1,48 @@
+/*Previous & next button*/
+
+.arrow-button {
+  height: 50px;
+  width: 50px;
+  font-size: 1.5rem;
+  border-radius: 100%;
+  color: white;
+  background-color: rgba(0,0,0,50%);;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.arrow-button:hover {
+  color: var(--color-text);
+  background-color: white;
+}
+
+.button-wrapper {
+  padding: 50px 40px;
+}
+
+/*Footer email button*/
+
+.footer-button {
+  background: none;
+  border: none;
+}
+
+/*More button- blog page*/
+
+.more-button {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px;
+}
+
+button:hover {
+  color: var(--color-nav-links);
+}
+
+button {
+  font-size: 1.8rem;
+  border: none;
+  background: none;
+}

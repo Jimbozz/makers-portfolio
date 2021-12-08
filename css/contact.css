@@ -1,0 +1,110 @@
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  border: 0;
+  outline: 0;
+  color: var(--color-text);;
+}
+
+.contact {
+  background: #F9E8D9;
+}
+
+.contact-button {
+  width: 7rem;
+  height: 3rem;
+  align-self: flex-end;
+  background: var(--color-text);
+  border: 1px solid var(--color-text);
+  color: white;
+}
+.contact-button:hover {
+  background: white;
+  border: 1px solid var(--color-text);
+  color: var(--color-text);
+}
+
+.form-container {
+  max-width: 800px;
+  width: 100%;
+  margin: 5rem auto;
+  padding: 0 1rem;
+}
+
+.form-styles {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-control {
+  width: 100%;
+  border: 1px solid var(--color-text);
+  border-radius: 1px;
+  background: none;
+  padding: 0.7em;
+}
+
+.form-control:valid {
+  border: 1px solid var(--color-success);
+}
+
+.form-control:focus + .error-message {
+  visibility: visible;
+  display: block;
+}
+
+.validation-pass {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 1rem;
+  background-color: rgb(172, 235, 172);
+  border: 1px solid var(--color-success);
+}
+.validation-fail {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 1rem;
+  background-color: rgb(172, 235, 172);
+  border: 1px solid var(--color-success);
+}
+
+.return-button {
+  text-decoration: underline;
+  color: var(--color-success);
+}
+
+input:not(:focus):not(:placeholder-shown):invalid {
+  border-color: red;
+}
+
+
+[placeholder]::-webkit-input-placeholder { color: #8D8D8D; }
+
+[placeholder]:hover::-webkit-input-placeholder { color: var(--color-text); }
+
+[placeholder]:focus::-webkit-input-placeholder { color: transparent; }
+
+[placeholder]::-moz-placeholder { color: #8D8D8D; }
+
+[placeholder]:hover::-moz-placeholder { color: var(--color-text); }
+
+[placeholder]:focus::-moz-placeholder { color: transparent; }
+
+[placeholder]:-ms-input-placeholder { color:#8D8D8D; }
+
+[placeholder]:hover:-ms-input-placeholder { color: var(--color-text); }
+
+[placeholder]:focus:-ms-input-placeholder { color: transparent; }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px #f9e8d9 inset !important;
+}

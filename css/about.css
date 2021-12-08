@@ -1,0 +1,19 @@
+.about {
+  background-color: #F2ECDE;
+}
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  margin: 200px 0px;
+}
+
+.about-content {
+  width: 60vw;
+  text-align: center;
+}
+
+.about-para {
+  text-align: left;
+  margin-top: 100px;
+}

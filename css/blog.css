@@ -1,0 +1,51 @@
+.blog-header {
+  text-align: center;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog-title-text {
+  width: 40vw;
+  min-width: 300px;
+}
+
+.blog-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 1rem;
+  margin: 100px 100px 70px 100px;
+}
+
+.blog-card {
+  text-align: center;
+}
+
+.blog-image {
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
+}
+
+/*Filter buttons*/
+
+.filter-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.filter-all, .filter-photo, .filter-illustration, .filter-music, .filter-film {
+  background: none;
+  border: none;
+  font-family: var(--text-paragraph);
+  font-size: 1rem;
+  color: #4b4b4b;
+  cursor: pointer;
+}
+
+.filter-all:focus, .filter-photo:focus, .filter-illustration:focus, .filter-music:focus, .filter-film:focus {
+  text-decoration: underline;
+}

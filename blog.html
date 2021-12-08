@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Stories created by our creatives around the globe">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind&family=Nobile:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+  <!-- Hotjar Tracking Code for http://makerstories.no/ -->
+  <script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:2719072,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+  </script>
+  <title>Makers | Blog</title>
+  <link rel="stylesheet" href="/css/global.css">
+  <link rel="stylesheet" href="/css/blog.css">
+  <link rel="stylesheet" href="/css/media.css">
+</head>
+<body class="page-wrapper">
+  <header class="header-layout">
+    <a href="/index.html">
+      <img src="/assets/logo/makers-logo@2x.png" class="logo" alt="Makers logo">
+    </a>
+    <div class="nav-align">
+      <nav class="nav-links">
+        <ul class="nav-unique" id="nav-unique">
+            <li><a href="index.html" class=" nav-style">Home</a></li>
+            <li><a href="blog.html" class="nav-style active">Blog</a></li>
+            <li><a href="about.html" class="nav-style">About Us</a></li>
+            <li><a href="contact.html" class="nav-style">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="blog-header">
+      <div class="blog-title-text">
+        <div class="genre">Blog</div>
+        <h1>Stories from independent artists</h1>
+        <p>A list of stories from our independent artists from around the globe.</p>
+      </div>
+    </section>
+    <section class="blog-contents">
+      <div class="filter-container">
+        <button class="filter-all">All</button>
+        <button class="filter-photo">Photography</button>
+        <button class="filter-illustration">Illustration</button>
+        <button class="filter-music">Music</button>
+        <button class="filter-film">Film</button>
+      </div>
+      <div class="blog-container">
+      </div>
+      <div class="more-button">
+        <button class="load-more">
+          <i class="fas fa-ellipsis-h"></i>
+        </button>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <div class="footer-form-wrapper">
+        <h3 class="footer-heading">Get stories straight to your inbox?</h3>
+        <form class="footer-form" action="https://noroffcors.herokuapp.com/http://www.makerstories.no/wp-json/contact-form-7/v1/contact-forms/138/feedback" method="post">
+          <label for="email-footer">Email:</label>
+          <input class="form-control" id="email-footer" type="email" name="email" required placeholder=" name@example.com">
+            <button class="footer-button" value="submit">
+              <div class="arrow-button">
+                <i class="fas fa-chevron-right"></i>
+              </div>
+            </button>
+        </form>
+      </div>
+      <div class="footer-links">
+        <ul class="footer-link-layout">
+          <li><a class="footer-link-style" href="/contact.html">Contact</a></li>
+          <li><a class="footer-link-style" href="/about.html">About Us</a></li>
+          <li><a class="footer-link-style" href="#">Facebook</a></li>
+          <li><a class="footer-link-style" href="#">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+<script src="/js/app.js"></script>
+<script src="/js/blog.js"></script>
+</body>
+</html>

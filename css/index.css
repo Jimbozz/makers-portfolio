@@ -1,0 +1,142 @@
+/*Hero section*/
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 80vh;
+  color: white;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,50%);
+  text-align: center;
+}
+
+.hero-text {
+  width: 65vw;
+}
+
+.hero-title-link {
+  color: inherit;
+}
+
+.hero-title-link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/*Featured post section*/
+
+.featured-container {
+  margin: 100px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+}
+
+.featured-post {
+  display: flex;
+  gap: 3rem;
+}
+
+.featured-container > .blog-link:first-child > article {
+  flex-direction: row-reverse;
+  margin-right: 80px;
+}
+
+.featured-container > .blog-link:last-child > article {
+  flex-direction: row;
+  margin-left: 80px;
+}
+
+.featured-title {
+  margin-top: 0px;
+}
+
+.featured-image {
+  max-width: 50vw;
+  height: 100%;
+}
+
+.featured-post:hover .featured-title {
+  text-decoration: underline;
+}
+
+/*Get in touch to tell us your stories*/
+
+.contact-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  color: white;
+  background-color: #D4A373;
+  text-align: center;
+}
+
+.contact-contents {
+  max-width: 50%;
+  color: white;
+}
+
+.contact-contents:hover{
+  text-decoration: underline;
+}
+
+/*Welcome splash*/
+
+.splash {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #F2ECDE;
+  z-index: 200;
+  color: var(--color-text);
+  text-align: center;
+}
+.splash.display-none {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #F2ECDE;
+  z-index: -1;
+  color: var(--color-text);
+  text-align: center;
+  transition: all 0.5s;
+}
+
+@keyframes splashFade {
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: splashFade 1s ease-in forwards;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.splash-text {
+  width: 50vw;
+  height: auto;
+  margin: 7px 0px;
+}
+
+.splash-heading {
+  font-size: 2rem;
+  margin-top: 3rem;
+}

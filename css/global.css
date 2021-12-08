@@ -1,0 +1,293 @@
+@import "/css/imports/variables.css";
+@import "/css/imports/links.css";
+
+html {
+  font-size: 100%;
+}
+
+html, body {
+  height: 100vh;
+  overflow-x: hidden;
+  /*Have added the 2 lines of code below to make the menu work in Safari*/
+  position: absolute; 
+  width: 100%;
+}
+
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--text-paragraph);
+	font-size: calc(15px + 0.3vw);
+	line-height: 1.6;
+	margin: 0;
+	padding: 0;
+  color: var(--color-text);
+}
+
+h1, h2, h3, h4, .nav-style, .blog-card-title {
+  font-family: var(--text-heading), sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*Heading styles*/
+
+.genre {
+  text-decoration: underline;
+}
+
+/*Theme layout*/
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+header {
+  background: #ffffff73;
+  height: 100px;
+  top: 0;
+  z-index: 100;
+  position: sticky;
+}
+
+main {
+  flex-grow: 1;
+}
+
+footer {
+  color: white;
+  min-height: 80vh;
+  background-color: var(--color-text);
+}
+
+/*Navigation*/
+
+.logo {
+  width: 8rem;
+  height: 100%;
+  display: block;
+}
+
+.header-layout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 80px;
+  padding: 5px 30px;
+}
+
+.burger {
+  display: block;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 4px;
+  background-color: #0a0d00;
+  margin: 5px;
+  transition: all 0.3s ease;
+  border-radius: 7px;
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-7px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-7px, -6px);
+}
+
+.toggle .line1, .toggle .line2, .toggle .line3 {
+  background-color: white;
+}
+
+.nav-unique {
+  position: absolute;
+  right: 0px;
+  top: 0vh;
+  height: 100vh;
+  background-color: var(--color-text);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 32vw;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in;
+  padding: 120px 0px 0px 30px;
+  margin-top: 0px;
+  gap: 21px;
+}
+
+.nav-active {
+  transform: translateX(0%);
+  margin-top: 0px;
+}
+
+.nav-style {
+  color: white;
+  margin-right: 10px;
+}
+
+.nav-style:hover {
+  text-decoration: underline;
+}
+
+.active {
+  color: var(--color-nav-links);
+}
+
+/*Horizontal scrolling cards*/
+
+.scrolling-cards {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 0px 20px;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  gap: 1rem;
+}
+
+.scrolling-cards::-webkit-scrollbar {
+  display: none;
+}
+
+.blog-card-title, .author {
+  margin-top: 13px;
+}
+
+.blog-card-image {
+  width: 40vw;
+  height: 27vw;
+  object-fit: cover;
+}
+
+.button-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  z-index: 1;
+  top: 35%;
+  height: 0px;
+}
+
+.latest-posts {
+  position: relative;
+  margin: 130px 0px;
+}
+
+.scrolling-text {
+  text-align: center;
+}
+
+.scrolling-text > h2 {
+  margin-bottom: 0px;
+}
+
+.blog-link {
+  color: var(--color-text);
+}
+
+.blog-link:hover .blog-card-title {
+  text-decoration: underline;
+}
+
+.author {
+  font-style: normal;
+}
+
+.article-details {
+  max-width: 400px;
+}
+
+.section-description {
+  margin-top: 0px;
+  padding: 0px 10px;
+}
+
+/*Footer styles*/
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.footer-form {
+  border: 1px solid white;
+  border-radius: 1px;
+  width: 50vw;
+  height: 4rem;
+  padding: 10px;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#email-footer {
+  color: white;
+  border: none;
+  background: none;
+  height: 100%;
+  width: 100%;
+}
+
+.footer-form-wrapper {
+  text-align: center;
+  margin-top: 180px;
+}
+
+.footer-input {
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  border: 0;
+  outline: 0;
+  color: #fff;
+  width: 100%;
+}
+
+.footer-links {
+  font-size: 85%;
+  margin-bottom: 1rem;
+}
+
+.footer-link-layout {
+  display: flex;
+  padding: 0px;
+  list-style-type: none;
+  text-decoration: none;
+  gap: 20px;
+}
+
+.footer-link-style {
+  color: white;
+}
+
+.footer-link-style:hover {
+  color: var(--color-nav-links);
+  text-decoration: underline;
+}
