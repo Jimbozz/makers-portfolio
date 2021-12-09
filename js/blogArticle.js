@@ -101,6 +101,32 @@ function createModal() {
 // blog comments
 
 
+const postLink = document.querySelector('#comments-heading');
+const formWrapper = document.querySelector('.comments-wrapper');
+
+postLink.addEventListener("click", function() {
+      
+  createForm();
+
+});
 
 
-
+function createForm() {
+ 
+  formWrapper.innerHTML += `
+  <form class="comments-form">
+    <input type="hidden" id="postId" value=${finalId}>
+    <div class="form-styles">
+      <label for="name">Name*</label>
+      <input class="form-control" id="name" type="text" required>
+    
+      <label for="email">Email*</label>
+      <input class="form-control" id="email" type="email" required>
+    
+      <label for="comment">Comment*</label>
+      <textarea class="form-control" name="comment" id="comment" cols="30" rows="10" required></textarea>
+      <button class="contact-button" type="submit">Post comment</button>
+    </div>
+  </form>`
+  ;   
+}

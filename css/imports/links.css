@@ -46,3 +46,19 @@ button {
   border: none;
   background: none;
 }
+
+/*form button*/
+
+.contact-button {
+  height: 3rem;
+  align-self: flex-end;
+  background: var(--color-text);
+  border: 1px solid var(--color-text);
+  color: white;
+  padding: 0px 2rem
+}
+.contact-button:hover {
+  background: white;
+  border: 1px solid var(--color-text);
+  color: var(--color-text);
+}

@@ -1,31 +1,9 @@
-button,
-input,
-select,
-textarea {
-  font-family: inherit;
-  font-size: 100%;
-  border: 0;
-  outline: 0;
-  color: var(--color-text);;
-}
+
 
 .contact {
   background: #F9E8D9;
 }
 
-.contact-button {
-  width: 7rem;
-  height: 3rem;
-  align-self: flex-end;
-  background: var(--color-text);
-  border: 1px solid var(--color-text);
-  color: white;
-}
-.contact-button:hover {
-  background: white;
-  border: 1px solid var(--color-text);
-  color: var(--color-text);
-}
 
 .form-container {
   max-width: 800px;
@@ -34,19 +12,6 @@ textarea {
   padding: 0 1rem;
 }
 
-.form-styles {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.form-control {
-  width: 100%;
-  border: 1px solid var(--color-text);
-  border-radius: 1px;
-  background: none;
-  padding: 0.7em;
-}
 
 .form-control:valid {
   border: 1px solid var(--color-success);

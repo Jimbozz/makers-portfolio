@@ -291,3 +291,30 @@ footer {
   color: var(--color-nav-links);
   text-decoration: underline;
 }
+
+/*Form styles*/
+
+.form-styles {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-control {
+  width: 100%;
+  border: 1px solid var(--color-text);
+  border-radius: 1px;
+  background: none;
+  padding: 0.7em;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  border: 0;
+  outline: 0;
+  color: var(--color-text);;
+}
