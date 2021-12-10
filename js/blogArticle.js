@@ -102,44 +102,15 @@ function createModal() {
 
 
 const postLink = document.querySelector('#comments-heading');
-const formWrapper = document.querySelector('.comments-wrapper');
-// const commentsForm = document.querySelector('form.comments-form');
-
-postLink.addEventListener("click", function() {
-      
-  // createForm();
-	commentsForm.style.display = "block";
-
-});
-
-
-// function createForm() {
- 
-//   formWrapper.innerHTML += `
-//   <form class="comments-form" action="https://www.makerstories.no/wp-json/contact-form-7/v1/contact-forms/228/feedback" method="post">
-//     <input type="hidden" id="postId" value=${finalId}>
-//     <div class="form-styles">
-//       <label for="your-name">Name*</label>
-//       <input class="form-control" id="your-name" name="your-name" type="text" required>
-    
-//       <label for="your-email">Email*</label>
-//       <input class="form-control" id="your-email" name="your-email type="email" required>
-    
-//       <label for="your-message">Comment*</label>
-//       <textarea class="form-control" type="text" name="your-message" id="your-message" cols="30" rows="10"></textarea>
-//       <button class="contact-button" type="submit">Post comment</button>
-//     </div>
-//   </form>`
-//   ;   
-// }
-
-//Grab form data using async function for comments
-
-
-
 const thanks = document.getElementById('thanks');
 const fail = document.getElementById('fail');
 const commentsForm = document.querySelector('form.comments-form');
+
+postLink.addEventListener("click", function() {
+
+	commentsForm.style.display = "block";
+
+});
 
 
 function submitSuccess() {
