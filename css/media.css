@@ -7,7 +7,7 @@
 
   /*blog article*/
   .article-wrapper {
-    width: 80vw;
+    max-width: 80vw;
   }
 
   .wp-block-quote {
@@ -23,6 +23,10 @@
 
   .blog-image {
     height: 22vh;
+  }
+
+  .blog-title-text {
+    max-width: 60vw;
   }
 
   /*index page - latest posts*/
@@ -59,7 +63,8 @@
 
   .featured-text-container {
     text-align: center;
-    margin: 0px 20px;
+    margin: 0 auto;
+    max-width: 80vw;
   }
 
   /*home page - featured layout*/
@@ -94,7 +99,11 @@
   /*about page*/
 
   .about-content {
-    width: 80vw;
+    max-width: 80vw;
+  }
+
+  .about-container {
+    margin: 100px 0px;
   }
 }
 

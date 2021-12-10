@@ -16,7 +16,7 @@
 }
 
 .hero-text {
-  width: 65vw;
+  max-width: 65vw;
 }
 
 .hero-title-link {
@@ -78,7 +78,7 @@
 }
 
 .contact-contents {
-  max-width: 50%;
+  max-width: 60vw;
   color: white;
 }
 

@@ -9,7 +9,7 @@
 }
 
 .about-content {
-  width: 60vw;
+  max-width: 60vw;
   text-align: center;
 }
 

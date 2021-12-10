@@ -1,7 +1,6 @@
 .blog-header {
   height: 80vh;
   background:  no-repeat center center fixed;
-  background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -21,7 +20,7 @@
 }
 
 .article-wrapper {
-  width: 50vw;
+  max-width: 50vw;
 }
 
 .article-image {

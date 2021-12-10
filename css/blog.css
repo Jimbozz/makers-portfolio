@@ -7,8 +7,7 @@
 }
 
 .blog-title-text {
-  width: 40vw;
-  min-width: 300px;
+  max-width: 60vw;
 }
 
 .blog-container {
