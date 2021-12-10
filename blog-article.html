@@ -57,11 +57,12 @@
       <a class="article-link" id="comments-heading">Post a comment</a>
       <form class="comments-form" id="comments-form" action="https://www.makerstories.no/wp-json/contact-form-7/v1/contact-forms/228/feedback" method="post">
         <div class="form-styles">
+          <input name="article-id" id="article-id" type="text" hidden>
           <label for="your-name">Name*</label>
           <input class="form-control" id="your-name" name="your-name" type="text" minlength="5" placeholder="Name here" title="Should be more than 5 characters long" required>
         
           <label for="your-email">Email*</label>
-          <input class="form-control" id="your-email" name="your-email" type="email" placeholder="name@example.com" required>
+          <input class="form-control" id="your-email" name="your-email" type="email" placeholder="name@example.com"required>
         
           <label for="your-message">Comment*</label>
           <textarea class="form-control" id="your-message" type="text" name="your-message" cols="30" rows="10" minlength="25" required placeholder="Message here" title="Should be more than 25 characters long"></textarea>

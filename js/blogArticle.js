@@ -109,6 +109,8 @@ const commentsForm = document.querySelector('form.comments-form');
 postLink.addEventListener("click", function() {
 
 	commentsForm.style.display = "block";
+	document.getElementById("article-id").value = finalId;
+
 
 });
 
@@ -146,3 +148,7 @@ async function onSubmit(event) {
 }
 
 commentsForm.onsubmit = onSubmit;
+
+
+
+
