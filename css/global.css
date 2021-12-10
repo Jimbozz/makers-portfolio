@@ -318,3 +318,22 @@ textarea {
   outline: 0;
   color: var(--color-text);;
 }
+
+/*Form validation message styling*/
+
+.validation-pass {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 1rem;
+  background-color: rgb(172, 235, 172);
+  border: 1px solid var(--color-success);
+}
+.validation-fail {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 1rem;
+  background-color: rgb(172, 235, 172);
+  border: 1px solid var(--color-success);
+}

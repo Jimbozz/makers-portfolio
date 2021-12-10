@@ -103,30 +103,75 @@ function createModal() {
 
 const postLink = document.querySelector('#comments-heading');
 const formWrapper = document.querySelector('.comments-wrapper');
+// const commentsForm = document.querySelector('form.comments-form');
 
 postLink.addEventListener("click", function() {
       
-  createForm();
+  // createForm();
+	commentsForm.style.display = "block";
 
 });
 
 
-function createForm() {
+// function createForm() {
  
-  formWrapper.innerHTML += `
-  <form class="comments-form">
-    <input type="hidden" id="postId" value=${finalId}>
-    <div class="form-styles">
-      <label for="name">Name*</label>
-      <input class="form-control" id="name" type="text" required>
+//   formWrapper.innerHTML += `
+//   <form class="comments-form" action="https://www.makerstories.no/wp-json/contact-form-7/v1/contact-forms/228/feedback" method="post">
+//     <input type="hidden" id="postId" value=${finalId}>
+//     <div class="form-styles">
+//       <label for="your-name">Name*</label>
+//       <input class="form-control" id="your-name" name="your-name" type="text" required>
     
-      <label for="email">Email*</label>
-      <input class="form-control" id="email" type="email" required>
+//       <label for="your-email">Email*</label>
+//       <input class="form-control" id="your-email" name="your-email type="email" required>
     
-      <label for="comment">Comment*</label>
-      <textarea class="form-control" name="comment" id="comment" cols="30" rows="10" required></textarea>
-      <button class="contact-button" type="submit">Post comment</button>
-    </div>
-  </form>`
-  ;   
+//       <label for="your-message">Comment*</label>
+//       <textarea class="form-control" type="text" name="your-message" id="your-message" cols="30" rows="10"></textarea>
+//       <button class="contact-button" type="submit">Post comment</button>
+//     </div>
+//   </form>`
+//   ;   
+// }
+
+//Grab form data using async function for comments
+
+
+
+const thanks = document.getElementById('thanks');
+const fail = document.getElementById('fail');
+const commentsForm = document.querySelector('form.comments-form');
+
+
+function submitSuccess() {
+  commentsForm.setAttribute('hidden', '');
+  thanks.removeAttribute('hidden');
+	commentsForm.style.display = "none";
 }
+function submitFail() {
+  commentsForm.setAttribute('hidden', '');
+  fail.removeAttribute('hidden');
+}
+
+
+async function onSubmit(event) {
+  event.preventDefault(); 
+  
+  try {
+    const response = await fetch(event.target.action, {
+      method: commentsForm.method,
+      body: new FormData(commentsForm)
+         
+    });
+    const data = await response.json();
+    console.log(data);
+    
+    submitSuccess();
+
+  } catch(error) {
+    
+    submitFail();
+    console.log(error);
+  }
+}
+
+commentsForm.onsubmit = onSubmit;
