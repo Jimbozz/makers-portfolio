@@ -15,6 +15,10 @@
     margin: 0;
   }
 
+  .blog-header {
+    height: 50vh;
+  }
+
   /*blog page - layout*/
 
   .blog-container {

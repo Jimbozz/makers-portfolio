@@ -1,11 +1,12 @@
 .blog-header {
   height: 80vh;
-  background:  no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
   box-shadow: inset 0 0 0 1000px rgba(0,0,0,50%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .article-heading {
