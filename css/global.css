@@ -175,8 +175,8 @@ footer {
 }
 
 .blog-card-image {
-  width: 40vw;
-  height: 27vw;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -223,6 +223,11 @@ footer {
 
 .section-description {
   margin-top: 0px;
+}
+
+.image-wrapper {
+  width: 26rem;
+  height: 17rem;
 }
 
 /*Footer styles*/

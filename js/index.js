@@ -98,7 +98,9 @@ function createFeatured(posts) {
               <h4 class="featured-title">${post.title.rendered}</h4>
               <p class="featured-description">${post.excerpt.rendered}</p>
             </div>
-            <img class="featured-image" src="${featureImage}" alt="${altText}">
+            <div class="featured-image">
+              <img src="${featureImage}" alt="${altText}">
+            </div>
           </article>
         </a>`
     ;   

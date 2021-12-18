@@ -42,7 +42,9 @@ function createPosts(posts) {
     container.innerHTML += `
           <a title="${post.title.rendered}" class="blog-link" href="/blog-article.html?id=${post.id}">
             <article class="blog-card">
-              <img class="blog-card-image" src="${blogImage}" alt="${imageText}">
+              <div class="image-wrapper">
+                <img class="blog-card-image" src="${blogImage}" alt="${imageText}">
+              </div>
               <div class="article-details">
                 <address class="author">${post._embedded.author[0].name}</address>
                 <div class="blog-card-title">${post.title.rendered}</div>
@@ -81,7 +83,9 @@ function createCards(posts) {
     photoWrapper.innerHTML += `
           <a title="${post.title.rendered}" class="blog-link" href="/blog-article.html?id=${post.id}">
             <article class="blog-card">
-              <img class="blog-card-image" src="${blogImage}" alt="${imageText}">
+              <div class="image-wrapper">
+                <img class="blog-card-image" src="${blogImage}" alt="${imageText}">
+              </div>
               <div class="article-details">
                 <address class="author">${post._embedded.author[0].name}</address>
                 <div class="blog-card-title">${post.title.rendered}</div>
